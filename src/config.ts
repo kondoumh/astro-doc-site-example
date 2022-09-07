@@ -27,6 +27,7 @@ export type Frontmatter = {
 
 export const KNOWN_LANGUAGES = {
 	English: 'en',
+	日本語: 'ja',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -53,5 +54,13 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Page 3', link: 'en/page-3' },
 		],
 		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+	},
+	ja: {
+		'セクションヘッダー': [
+			{ text: 'イントロダクション', link: 'ja/introduction' },
+			{ text: 'ページ2', link: 'ja/page-2' },
+			{ text: 'ページ3', link: 'ja/page-3' },
+		],
+		'他のセクション': [{ text: 'ページ4', link: 'ja/page-4' }],
 	},
 };
