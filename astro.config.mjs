@@ -10,5 +10,6 @@ export default defineConfig({
 		// Enable React for the Algolia search component.
 		react(),
 	],
+	base: process.env.NODE_ENV === "production" ? "/astro-doc-site-example/" : "./",
 	site: `http://astro.build`,
 });
